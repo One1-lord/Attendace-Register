@@ -1,43 +1,68 @@
 
-let workers=[""]
+let workers=[]
+let worker = {}
 
 let workerArrived =()=>{
     workers.push()
 }
-const today = new Date();
-let month= today.getMonth();
-let day = today.getDate();
-let hour = today.getHours();
-let minutes = today.getMinutes();
-
-
-let realTime = hour.toString() + ":" + minutes.toString();
 
 
 let workerEntry=()=>{
-    let name = document.getElementById("entry").value;
-    
-    
+  const today = new Date();
+  let hour = today.getHours();
+  let minutes = today.getMinutes();
+  
+  
+  let realTime = hour.toString() + ":" + minutes.toString();
+  
+    let name = document.getElementById("input").value;
+
+    worker.name = name;
+    worker.realTime = realTime
+
+    workers.push(worker)
+    document.getElementById("input").value = "";
 
     document.getElementById("display").innerHTML =
-        workers.map(()=>{
+        workers.map((worker)=>{
 
-      return `<li>${name} arived at ${realTime}</li>`;
+      return `<li>${worker.name} arived at ${worker.realTime}</li>`;
         }
     
         )
+
+        worker = {}
 };
 
 let workerExit=()=>{
-    let name = document.getElementById("exit").value;
+  let name = document.getElementById("input").value;
+  
+  const today = new Date();
+  let hour = today.getHours();
+  let minutes = today.getMinutes();
+  
+  
+  let realTime = hour.toString() + ":" + minutes.toString();
+  
     
+
+    worker.name = name;
+    worker.realTime = realTime
+
     
+  if (workers.indexOf(name) > -1) {
+
+    workers.push(worker)
+    document.getElementById("input").value = "";
 
     document.getElementById("display2").innerHTML =
-        workers.map(()=>{
+        workers.map((worker)=>{
 
-      return `<li>${name} left at ${realTime}</li>`;
+      return `<li>${worker.name} left at ${worker.realTime}</li>`;
         }
     
         )
-};
+
+        worker = {}
+}else {}
+;}

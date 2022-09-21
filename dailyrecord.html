@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Attendance check</title>
+    <link rel="stylesheet" href="dailyrecord.css"/>
 </head>
 <body>
 <input id="input"/>
-<button onclick="workerEntry()" id="entry">Sign in</button>
-<button onclick="workerExit()" id="exit">Sign out</button>
-    
-<section id="display"></section>
-<section id="display2"></section>
+<button onclick="welcomeWorker()" id="entry">Entry Time</button>
+<button onclick="exitWorker()" id="exit">Exit Time</button>
 
-    <script src="dailyrecord.js"></script>
+<div class="file">
+    <section >
+        <ul id="display"></ul>
+    </section>
+
+    <section>
+        <ul id="display2" ></ul>
+    </section>
+</div>
+    <script src="record.js"></script>
 </body>
 </html>
