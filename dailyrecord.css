@@ -30,3 +30,16 @@ button{
     background-color: #4a154b;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+li{
+    font-size: 17px;
+    list-style-type:decimal;
+    border:1px solid black;
+    padding: 5px;
+    margin: 0px 5px;
+}
+section{
+    width:25%;
+    border: 1px solid black;
+
+}
+
