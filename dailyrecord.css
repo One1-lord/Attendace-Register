@@ -1,3 +1,32 @@
+body{
+    background-color: rgb(33, 176, 176);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
 .file{
     display: flex;
+}
+input{
+    width: 40%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #4a154b ;
+    background-color: rgb(216, 250, 250);
+    margin-left: 25px;
+}
+button{
+    margin:15px 0px 0 25px;
+    padding: 13px 26px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border:1px solid #4a154b;
+    color:white ;
+    background-color: #4a154b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
