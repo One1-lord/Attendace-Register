@@ -22,7 +22,7 @@ if (fieldtest === true ){
 
 }
 console.log(fieldtest)
-*//////////passig information to a function//////
+//////////passig information to a function//////
 
 function goToTheShop(){
     let buy =document.getElementById("info").value;
@@ -39,3 +39,12 @@ function getRandomNumber(){
 const rollDiece = getRandomNumber();
 console.log(getRandomNumber());
 */
+
+function calcArea(){
+    let lenght =document.getElementById("info").value;
+    let width =document.getElementById("info1").value;
+    let unit = "meters"
+    const area=lenght*width;
+
+    alert(`${area} ${unit}` )
+}
