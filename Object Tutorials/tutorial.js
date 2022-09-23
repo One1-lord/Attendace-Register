@@ -46,5 +46,5 @@ function calcArea(){
     let unit = "meters"
     const area=lenght*width;
 
-    alert(`${area} ${unit}` )
+    alert(`${area} ${unit}`)
 }
