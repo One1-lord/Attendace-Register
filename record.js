@@ -4,8 +4,8 @@
   let minutes = today.getMinutes();  
   
 let workerName = document.getElementById("input").value;
-let arivalTime = hour.toString() + ":" + minutes.toString();
-let departureTime = hour.toString() + ":" + minutes.toString();
+let arivalTime = hour + ":" + minutes;
+let departureTime = hour + ":" + minutes;
 
 let workers=[]
 let workers1=[]
